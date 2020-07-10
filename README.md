@@ -66,3 +66,15 @@ bibliography: references.bib
 csl: the-lancet.csl
 ---
 ```
+
+## Figures
+
+One recommended workflow for figures, represented in this template,
+is to save functions for generating figures in a `figures` directory, one
+per file, then load in data and call these functions within the Rmarkdown
+files.
+
+This process makes it easier to view the code for a specific figure,
+and moves a lot of excess code out of the Rmarkdown file. Minimizing the amount
+of code in Rmarkdown files makes it easier to read and focus on the text and
+structure.
