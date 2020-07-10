@@ -1,0 +1,35 @@
+---
+title: "manuscript"
+author: "author"
+date: "date"
+output: pdf_document
+bibliography: references.bib
+csl: the-lancet.csl
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+
+# change `code_dir` here to wherever you've cloned this repository
+code_dir <- "~/paperTemplate"
+setwd(code_dir)
+
+# utility functions
+source(paste0(code_dir, "/utils.R"))
+```
+
+## Abstract
+
+## Introduction
+
+Example in-line citation [@gbdmort2017].
+
+Example in-line citation number two [@preston2001].
+
+## Methods
+
+## Results
+
+## Discussion
+
+## References
