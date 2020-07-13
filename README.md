@@ -7,8 +7,8 @@ Template repository for scientific journal articles and associated materials
 Use the `data-raw` folder to save code that extracts or downloads the input
 data used for your paper. This code can output data to the `data` directory.
 
-Use the `data` directory to store input data. In this template, `.rds` files
-in the `data` directory will not be tracked with git (see `.gitignore` file).
+Use the `data` directory to store input data. In this template, the `data` 
+directory will not be tracked with git (see `.gitignore` file).
 
 ## Analysis
 
@@ -46,6 +46,11 @@ To save bibliographic information about sources used for your paper, use
 a `.bib` file. This template includes `references.bib`. For information about 
 `.bib` file syntax, go [here](http://web.mit.edu/rsi/www/pdfs/bibtex-format.pdf).
 
+Reference manager softwares like Zotero and Mendeley can also export `.bib`
+files. These softwares have web plugins for easy extraction of reference
+metadata from web pages, and can be a nice way to store and track references
+across projects.
+
 For information about citations in Rmarkdown, including instructions for
 in-line citations, go [here](https://rmarkdown.rstudio.com/authoring_bibliographies_and_citations.html).
 
@@ -78,3 +83,7 @@ This process makes it easier to view the code for a specific figure,
 and moves a lot of excess code out of the Rmarkdown file. Minimizing the amount
 of code in Rmarkdown files makes it easier to read and focus on the text and
 structure.
+
+*If figures take a long time to compile*, it may be more appropriate to have
+tables and figures code export `.csv`  and `.jpg` files, which are then
+included in the Rmarkdown scripts without needing to be recompiled from scratch.
