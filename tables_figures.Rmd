@@ -1,0 +1,34 @@
+---
+title: "tables and figures"
+author: "author"
+date: "date"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+
+# change `code_dir` here to wherever you've cloned this repository
+code_dir <- "~/paperTemplate"
+setwd(code_dir)
+
+# utility functions
+source(paste0(code_dir, "/utils.R"))
+
+# functions to generate tables and figures
+source(paste0(code_dir, "/figures/figure1.R"))
+```
+
+```{r fig_data, echo=FALSE}
+# toy data
+data <- data.frame(
+  x = rnorm(20),
+  y = rnorm(20)
+)
+```
+
+\newpage
+```{r fig1, echo=FALSE, fig.cap="**Title.** Caption."}
+# create figure 1
+fig1(data)
+```
